@@ -1,0 +1,16 @@
+ERROR - 2022-03-30 08:48:26 --> Table 'pasteleria.roles' doesn't exist
+CRITICAL - 2022-03-30 08:48:27 --> Call to a member function getResult() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Roles.php(16): CodeIgniter\BaseModel->findAll()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Roles->index()
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Roles))
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}
+ERROR - 2022-03-30 08:51:33 --> Unknown column 'nombre' in 'field list'
+ERROR - 2022-03-30 08:56:22 --> Unknown column 'created_at' in 'field list'
+ERROR - 2022-03-30 08:57:00 --> Unknown column 'created_at' in 'field list'
+ERROR - 2022-03-30 09:00:56 --> Unknown column 'created_at' in 'field list'
+ERROR - 2022-03-30 09:02:10 --> Unknown column 'created_at' in 'field list'
+ERROR - 2022-03-30 18:11:02 --> Unknown column 'direcccion' in 'field list'
