@@ -41,7 +41,22 @@ class Adornos extends ResourceController
             $adornoVerificado = $this->model->find($id);
             if( $adornoVerificado == null)
             return $this->failNotFound('No se encontro el usuario con el id del adorno: '.$id);
+            // AQUI TOMO EL VALOR DE LA IMAGEN Y LA ELIMINO
+            if($adornoVerificado['imagen_adorno'] != null)
+            $nombreImagen = $adornoVerificado['imagen_adorno'];//aqui rompe 
+            unlink(APPPATH.'../public/images/adornos/'.$nombreImagen);
+          
+            $image = $this->request->getVar('imagen_adorno');
+            $image = str_replace('data:image/png;base64,', '', $image);
+            $image = str_replace(' ', '+', $image);
+            $imageName = 'adorno_'.time().'.png';
+            $imageData = base64_decode($image);
+            $file = fopen(APPPATH.'../public/images/adornos/'.$imageName, 'w');
+            fwrite($file, $imageData);
+            fclose($file);
             $adorno = $this->request->getJSON();
+            $adorno->imagen_adorno = $imageName;
+
             if($this->model->update($id, $adorno)):
             $adorno->id = $id;
             return $this->respondUpdated($adorno);
@@ -53,6 +68,7 @@ class Adornos extends ResourceController
             return $this->failServerError($e,'Error en el servidor');
         }
   }
+
 
   
   public function delete($id = null)
