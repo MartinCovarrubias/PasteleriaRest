@@ -33,7 +33,6 @@ class Adornos extends ResourceController
         }
   }
 
-  
   public function update($id = null)
   {
         try{
@@ -55,6 +54,7 @@ class Adornos extends ResourceController
         }
   }
 
+  
   public function delete($id = null)
   {
         try{
@@ -62,10 +62,12 @@ class Adornos extends ResourceController
               return $this->failValidationErrors('No se ha especificado el id del adorno');
             $adornoVerificado = $this->model->find($id);
             if( $adornoVerificado == null)
-              return $this->failNotFound('No se encontro el adorno con el id: '.$id);
-          
-           if($this->model->delete($id)):
-           
+              return $this->failNotFound('No se encontro el adorno con el id: '.$id);  
+              if($adornoVerificado['imagen_adorno'] != null)
+              $nombreImagen = $adornoVerificado['imagen_adorno'];//aqui rompe 
+              unlink(APPPATH.'../public/images/adornos/'.$nombreImagen);
+              if($this->model->delete($id)):
+            $adornoVerificado = $this->model->find($id);
             return $this->respondDeleted($adornoVerificado);
           else:
              return $this->failValidationErrors('No se pudo eliminar el adorno');
@@ -74,7 +76,6 @@ class Adornos extends ResourceController
         }catch(\Exception $e){
             return $this->failServerError($e,'Error en el servidor');
         }
-      
   }
 
 
@@ -99,7 +100,7 @@ public function create() {
     else:
        return $this->failValidationErrors($this->model->validation->listErrors());
     endif;
-
+     
   }catch(\Exception $e){
     return $this->failServerError($e,'Error en el servidor');
   }
