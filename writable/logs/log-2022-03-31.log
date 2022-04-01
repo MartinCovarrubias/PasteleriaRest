@@ -1,0 +1,37 @@
+CRITICAL - 2022-03-31 16:42:51 --> fopen(/public/images/adornos/adorno_1648762971.png): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(/public/i...', 'C:\\proyectos\\Ba...', 90)
+#1 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Adornos.php(90): fopen('/public/images/...', 'w+')
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Adornos->create()
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Adornos))
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}
+ERROR - 2022-03-31 17:08:03 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2022-03-31 17:08:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Adornos.php(16): CodeIgniter\BaseModel->findAll()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Adornos->index()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Adornos))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-03-31 17:08:32 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2022-03-31 17:08:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Adornos.php(16): CodeIgniter\BaseModel->findAll()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Adornos->index()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Adornos))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}

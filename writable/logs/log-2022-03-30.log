@@ -14,3 +14,13 @@ ERROR - 2022-03-30 08:57:00 --> Unknown column 'created_at' in 'field list'
 ERROR - 2022-03-30 09:00:56 --> Unknown column 'created_at' in 'field list'
 ERROR - 2022-03-30 09:02:10 --> Unknown column 'created_at' in 'field list'
 ERROR - 2022-03-30 18:11:02 --> Unknown column 'direcccion' in 'field list'
+CRITICAL - 2022-03-30 22:12:13 --> Attempt to read property "insert_id" on bool
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\MySQLi\Connection.php(565): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\proyectos\\Ba...', 565)
+#1 C:\proyectos\Backend\PaseleriaRest\system\Model.php(726): CodeIgniter\Database\MySQLi\Connection->insertID()
+#2 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Adornos.php(84): CodeIgniter\Model->__call('insertID', Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Adornos->create()
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Adornos))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#8 {main}

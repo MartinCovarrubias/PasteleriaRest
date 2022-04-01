@@ -47,6 +47,13 @@ $routes->group('api',['namespace' => 'App\Controllers\API'],function($routes){
     $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
     $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
     $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
+
+    //Rutas para el controlador de adornos
+    $routes->get('adornos', 'Adornos::index');
+    $routes->post('adornos/create', 'Adornos::create');
+    $routes->get('adornos/edit/(:num)', 'Adornos::edit/$1');
+    $routes->put('adornos/update/(:num)', 'Adornos::update/$1');
+    $routes->delete('adornos/delete/(:num)', 'Adornos::delete/$1');
 });
 
 
