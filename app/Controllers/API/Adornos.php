@@ -41,9 +41,11 @@ class Adornos extends ResourceController
             $adornoVerificado = $this->model->find($id);
             if( $adornoVerificado == null)
             return $this->failNotFound('No se encontro el usuario con el id del adorno: '.$id);
-            // AQUI TOMO EL VALOR DE LA IMAGEN Y LA ELIMINO
-            if($adornoVerificado['imagen_adorno'] != null)
-            $nombreImagen = $adornoVerificado['imagen_adorno'];//aqui rompe 
+            // ! aqui termina el codigo de verificacion de usuario
+            $adorno = $this->request->getJSON();
+            //si el json trae el campo imagen_adorno, entonces se actualiza la imagen del adorno
+            if(isset($adorno->imagen_adorno)):
+              $nombreImagen = $adornoVerificado['imagen_adorno']; 
             unlink(APPPATH.'../public/images/adornos/'.$nombreImagen);
           
             $image = $this->request->getVar('imagen_adorno');
@@ -54,11 +56,14 @@ class Adornos extends ResourceController
             $file = fopen(APPPATH.'../public/images/adornos/'.$imageName, 'w');
             fwrite($file, $imageData);
             fclose($file);
-            $adorno = $this->request->getJSON();
             $adorno->imagen_adorno = $imageName;
-
+            //si el json no trae el campo imagen_adorno, entonces se mantiene la imagen del adorno y se actualiza el resto de campos
+            else:
+              $adorno->imagen_adorno = $adornoVerificado['imagen_adorno'];
+            endif;
+          
             if($this->model->update($id, $adorno)):
-            $adorno->id = $id;
+
             return $this->respondUpdated($adorno);
           else:
              return $this->failValidationErrors($this->model->validation->listErrors());
@@ -69,8 +74,9 @@ class Adornos extends ResourceController
         }
   }
 
-
   
+
+
   public function delete($id = null)
   {
         try{

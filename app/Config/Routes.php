@@ -54,6 +54,14 @@ $routes->group('api',['namespace' => 'App\Controllers\API'],function($routes){
     $routes->get('adornos/edit/(:num)', 'Adornos::edit/$1');
     $routes->put('adornos/update/(:num)', 'Adornos::update/$1');
     $routes->delete('adornos/delete/(:num)', 'Adornos::delete/$1');
+    
+    //Rutas para el controlador de pasteles
+    $routes->get('pasteles', 'Pastel::index');
+    $routes->post('pasteles/create', 'Pastel::create');
+    $routes->get('pasteles/edit/(:num)', 'Pastel::edit/$1');
+    $routes->put('pasteles/update/(:num)', 'Pastel::update/$1');
+    $routes->delete('pasteles/delete/(:num)', 'Pastel::delete/$1');
+
 });
 
 
