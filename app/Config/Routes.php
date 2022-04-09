@@ -62,6 +62,14 @@ $routes->group('api',['namespace' => 'App\Controllers\API'],function($routes){
     $routes->put('pasteles/update/(:num)', 'Pastel::update/$1');
     $routes->delete('pasteles/delete/(:num)', 'Pastel::delete/$1');
 
+    //Rutas para el controlador de pedidos
+    $routes->get('pedidos', 'Pedidos::index');
+    $routes->post('pedidos/create', 'Pedidos::create');
+    $routes->get('pedidos/edit/(:num)', 'Pedidos::edit/$1');
+    $routes->put('pedidos/update/(:num)', 'Pedidos::update/$1');
+    $routes->delete('pedidos/delete/(:num)', 'Pedidos::delete/$1');
+    
+
 });
 
 

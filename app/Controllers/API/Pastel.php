@@ -91,6 +91,7 @@ class Pastel extends ResourceController
               if($this->model->delete($id)):
             $pastelVerificado = $this->model->find($id);
             return $this->respondDeleted($pastelVerificado);
+        
           else:
              return $this->failValidationErrors('No se pudo eliminar el pastel');
           endif;

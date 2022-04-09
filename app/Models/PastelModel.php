@@ -18,7 +18,7 @@ use CodeIgniter\Model;
             'precio'          =>  'required|decimal|min_length[1]|max_length[100]',
             'descripcion'     =>  'required|alpha_space|min_length[3]|max_length[100]',
             'estado'          =>  'required|alpha_space|min_length[3]|max_length[100]',
-            'id_adorno'       =>  'integer'
+           // 'id_adorno'       =>  'integer'
         ];
 
         protected $validationMessages = [
