@@ -29,4 +29,7 @@ class Services extends BaseService
      *     return new \CodeIgniter\Example();
      * }
      */
+    public static function getSecretKey(){
+        return 'key_secret';
+    }
 }

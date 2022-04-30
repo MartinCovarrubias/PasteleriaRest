@@ -32,8 +32,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->post('/auth/login', 'Auth::login');
 
-$routes->group('api',['namespace' => 'App\Controllers\API'],function($routes){
+$routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter'],function($routes){
     //Rutas para el controlador de roles
     $routes->get('roles', 'Roles::index');
     $routes->post('roles/create', 'Roles::create');
@@ -69,6 +70,14 @@ $routes->group('api',['namespace' => 'App\Controllers\API'],function($routes){
     $routes->put('pedidos/update/(:num)', 'Pedidos::update/$1');
     $routes->delete('pedidos/delete/(:num)', 'Pedidos::delete/$1');
     
+    //para el controlador de detalle de pedidos
+    $routes->get('detalle_pedidos', 'Detalle_Pedido::index');
+    $routes->post('detalle_pedidos/create', 'Detalle_Pedido::create');
+    $routes->get('detalle_pedidos/edit/(:num)', 'Detalle_Pedido::edit/$1');
+    $routes->put('detalle_pedidos/update/(:num)', 'Detalle_Pedido::update/$1');
+    $routes->delete('detalle_pedidos/delete/(:num)', 'Detalle_Pedido::delete/$1');
+    
+    $routes->get('pedidos/usuario/(:num)', 'Pedidos::getPedidosbyUsuarios/$1');
 
 });
 

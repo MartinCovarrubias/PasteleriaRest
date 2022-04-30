@@ -1,0 +1,154 @@
+ERROR - 2022-04-29 13:35:16 --> Unknown column 'password' in 'field list'
+CRITICAL - 2022-04-29 14:51:11 --> Cannot use object of type stdClass as array
+#0 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#5 {main}
+CRITICAL - 2022-04-29 16:37:25 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-04-29 16:37:49 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-04-29 16:38:15 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-04-29 16:38:23 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-04-29 16:45:37 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-04-29 17:11:25 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-04-29 17:15:38 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-04-29 17:16:27 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-04-29 17:17:15 --> Class "app\Models\CustomRules\MyCustomRules" not found
+#0 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#2 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#3 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-04-29 18:11:20 --> Unknown column 'usuario.apellido' in 'field list'
+CRITICAL - 2022-04-29 18:11:21 --> Call to a member function getResultArray() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Pedidos.php(106): App\Models\PedidoModel->PedidoPorUsuario('1')
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Pedidos->getPedidosbyUsuarios('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Pedidos))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+ERROR - 2022-04-29 18:13:12 --> Unknown column 'usuario.apellido' in 'field list'
+CRITICAL - 2022-04-29 18:13:13 --> Call to a member function getResultArray() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Pedidos.php(106): App\Models\PedidoModel->PedidoPorUsuario('1')
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Pedidos->getPedidosbyUsuarios('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Pedidos))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+ERROR - 2022-04-29 19:12:43 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-04-29 19:12:44 --> Call to a member function getFirstRow() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}
+ERROR - 2022-04-29 19:13:14 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-04-29 19:13:15 --> Call to a member function getFirstRow() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}

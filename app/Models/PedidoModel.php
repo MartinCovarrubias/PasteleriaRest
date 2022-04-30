@@ -18,7 +18,7 @@ class PedidoModel extends Model
         'fecha_pedido'   =>  'required|valid_date[Y-m-d]',
         'total'          =>  'required|integer|min_length[1]|max_length[100]',
         'estado'         =>  'required|alpha_space|min_length[3]|max_length[100]',
-        'id_usuario'     =>  'required|integer'
+        'id_usuario'     =>  'required|integer|is_valid_usuario'
     ];
    
 
@@ -40,9 +40,24 @@ class PedidoModel extends Model
         ],
         'id_usuario'  => [
             'integer'     => 'El id del usuario debe ser un numero entero',
-            'required'    => 'El id del usuario es requerido'
+            'required'    => 'El id del usuario es requerido',
+            'is_valid_usuario' => 'El id del usuario no existe'
         ]
     ];
       
     protected $skipValidation = false;
+
+    public function PedidoPorUsuario($id_usuario=null)
+    {
+       //join para ver que usuario hizo el pedido
+            $builder = $this->db->table($this->table);
+            $builder->select('pedido.id_pedido, pedido.fecha_pedido, pedido.total, pedido.estado, usuario.nombre, usuario.apellidoP');   
+            $builder->join('usuario', 'usuario.id_usuario = pedido.id_usuario');
+            $builder->where('pedido.id_usuario', $id_usuario);
+            $query = $builder->get();
+            return $query->getResultArray();
+         
+
+    }
 }
+

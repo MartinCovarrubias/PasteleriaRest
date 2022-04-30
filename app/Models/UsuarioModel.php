@@ -20,9 +20,9 @@ class UsuarioModel extends Model{
         'apellidoM'   =>  'required|alpha_space|min_length[3]|max_length[100]',
         'telefono'    =>  'required|numeric|min_length[10]|max_length[10]',
         'correo'      =>  'required|valid_email|min_length[5]|max_length[100] |is_unique[usuario.correo]',
-        'password'    =>  'required|min_length[6]|max_length[8]|alpha_numeric',
-        'direccion'  =>  'required|alpha_numeric_space|min_length[5]|max_length[100]',
-        'id_rol'      =>  'required|integer'
+        'password'    =>  'required|min_length[6]|max_length[64]',
+        'direccion'   =>  'required|alpha_numeric_space|min_length[5]|max_length[100]',
+        'id_rol'      =>  'required|integer|is_valid_rol'
     ];
 
     protected $validationMessages = [
@@ -72,8 +72,10 @@ class UsuarioModel extends Model{
         ],
         'id_rol'      => [
             'required'     => 'El rol es requerido',
-            'integer'      => 'El rol debe ser un numero entero'
-        ]
+            'integer'      => 'El rol debe ser un numero entero',
+            'is_valid_rol' => 'El rol no existe'
+        ],
+
         
         ];
 

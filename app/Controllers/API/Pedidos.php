@@ -3,6 +3,7 @@
 namespace App\Controllers\API;
 
 use App\Models\PedidoModel;
+use App\Models\UsuarioModel;
 use CodeIgniter\RESTful\ResourceController;
 
 class Pedidos extends ResourceController
@@ -90,6 +91,24 @@ class Pedidos extends ResourceController
             return $this->failServerError($e,'Error en el servidor');
         }
       
+  }
+
+
+  public function getPedidosbyUsuarios($id = null){
+    try {
+      $modelUsuario = new UsuarioModel();
+        if($id == null)
+          return $this->failValidationErrors('No se ha pasado un id valido');
+
+        $usuario = $modelUsuario->find($id);
+        if($usuario == null)
+          return $this->failNotFound('No se encontro el usuario con el id: '.$id);
+          $pedidos = $this->model->PedidoPorUsuario($id);
+          return $this->respond($pedidos);
+
+    }catch(\Exception $e){
+      return $this->failServerError($e,'Error en el servidor');
+    }
   }
 
 }

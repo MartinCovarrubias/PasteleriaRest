@@ -21,6 +21,10 @@ class Usuarios extends ResourceController
   {
       try{
           $usuario = $this->request->getJSON();
+    //hash  sha256 
+    $usuario->password = password_hash($usuario->password, PASSWORD_BCRYPT);
+
+        
           if($this->model->insert($usuario)):
             $usuario->id = $this->model->insertID();
             return $this->respondCreated($usuario);
@@ -57,6 +61,7 @@ class Usuarios extends ResourceController
             if( $usuarioVerificado == null)
               return $this->failNotFound('No se encontro el usuario con el id: '.$id);
            $usuario = $this->request->getJSON();
+           $usuario->password = password_hash($usuario->password, PASSWORD_BCRYPT);
            if($this->model->update($id, $usuario)):
             $usuario->id = $id;
             return $this->respondUpdated($usuario);
