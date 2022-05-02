@@ -8,7 +8,7 @@ use CodeIgniter\Model;
         protected $autoIncrement = true;
     
         protected $returnType    = 'array';
-        protected $allowedFields = ['nombre','imagen_pastel','precio','descripcion','estado','id_adorno'];
+        protected $allowedFields = ['nombre','imagen_pastel','precio','descripcion','estado'];
     
         protected $useTimestamps  = false;
 
@@ -18,7 +18,7 @@ use CodeIgniter\Model;
             'precio'          =>  'required|decimal|min_length[1]|max_length[100]',
             'descripcion'     =>  'required|alpha_space|min_length[3]|max_length[100]',
             'estado'          =>  'required|alpha_space|min_length[3]|max_length[100]',
-           // 'id_adorno'       =>  'integer'
+           
         ];
 
         protected $validationMessages = [
@@ -51,9 +51,7 @@ use CodeIgniter\Model;
                 'alpha_space' => 'El estado debe contener solo letras y espacios',
                 'min_length'  => 'El estado debe tener al menos 3 caracteres',
             ],
-            'id_adorno'    => [
-                'integer'     => 'El id del adorno debe ser un numero entero'
-            ]
+          
     ];
         protected $skipValidation = false;
 

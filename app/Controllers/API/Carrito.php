@@ -2,34 +2,34 @@
 
 namespace App\Controllers\API;
 
-use App\Models\detallepModel;
+use App\Models\CarritoModel;
 use CodeIgniter\RESTful\ResourceController;
 
-class Detalle_Pedido extends ResourceController
+class Carrito extends ResourceController
 {
     public function __construct(){
-        $this->model = $this->setModel(new detallepModel());
+        $this->model = $this->setModel(new CarritoModel());
     }
 
   public function index()
 {
-    $detalles = $this->model->findAll();
-    return $this->respond($detalles);
+    $carritos = $this->model->findAll();
+    return $this->respond($carritos);
 }
 
   public function create()
   {
       try{
-          $detalle = $this->request->getJSON();
-          if($this->model->insert($detalle)):
-            $detalle->id = $this->model->insertID();
-            return $this->respondCreated($detalle);
+          $carrito = $this->request->getJSON();
+          if($this->model->insert($carrito)):
+            $carrito->id = $this->model->insertID();
+            return $this->respondCreated($carrito);
           else:
              return $this->failValidationErrors($this->model->validation->listErrors());
           endif;
 
       }catch(\Exception $e){
-          return $this->failServerError($e,'Error al crear el detalle');
+          return $this->failServerError($e,'Error al crear el carrito');
       }
   }
 
@@ -37,11 +37,11 @@ class Detalle_Pedido extends ResourceController
   {
         try{
            if($id == null)
-              return $this->failValidationErrors('No se ha especificado el id del detalle');
-            $detalle = $this->model->find($id);
-            if($detalle == null)
-              return $this->failNotFound('No se encontro el detalle con el id: '.$id);
-            return $this->respond($detalle);
+              return $this->failValidationErrors('No se ha especificado el id del carrito');
+            $carrito = $this->model->find($id);
+            if($carrito == null)
+              return $this->failNotFound('No se encontro el carrito con el id: '.$id);
+            return $this->respond($carrito);
         }catch(\Exception $e){
             return $this->failServerError($e,'Error en el servidor');
         }
@@ -53,13 +53,13 @@ class Detalle_Pedido extends ResourceController
         try{
            if($id == null)
               return $this->failValidationErrors('No se ha especificado el id del detalle');
-            $detalleVerificado = $this->model->find($id);
-            if( $detalleVerificado == null)
+            $carritoVerificado = $this->model->find($id);
+            if( $carritoVerificado == null)
               return $this->failNotFound('No se encontro el detalle con el id: '.$id);
-           $detalle = $this->request->getJSON();
-           if($this->model->update($id, $detalle)):
-            $detalle->id = $id;
-            return $this->respondUpdated($detalle);
+           $carrito = $this->request->getJSON();
+           if($this->model->update($id, $carrito)):
+            $carrito->id = $id;
+            return $this->respondUpdated($carrito);
           else:
              return $this->failValidationErrors($this->model->validation->listErrors());
           endif;
@@ -75,13 +75,13 @@ class Detalle_Pedido extends ResourceController
         try{
            if($id == null)
               return $this->failValidationErrors('No se ha especificado el id del detalle');
-            $detalleVerificado = $this->model->find($id);
-            if( $detalleVerificado == null)
+            $carritoVerificado = $this->model->find($id);
+            if( $carritoVerificado == null)
               return $this->failNotFound('No se encontro el detalle  con el id: '.$id);
           
            if($this->model->delete($id)):
            
-            return $this->respondDeleted($detalleVerificado);
+            return $this->respondDeleted($carritoVerificado);
           else:
              return $this->failValidationErrors('No se pudo eliminar el detalle');
           endif;

@@ -37,10 +37,16 @@ $routes->post('/usuarios/create', 'Usuarios::create');
 
 $routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
     $routes->post('usuarios/create', 'Usuarios::create');
-});
 
-$routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter'],function($routes){
-    //Rutas para el controlador de roles
+    //rutas para el carrito
+    $routes->get('carrito', 'Carrito::index');
+    $routes->post('carrito/create', 'Carrito::create');
+    $routes->get('carrito/edit/(:num)', 'Carrito::edit');
+    $routes->post('carrito/update/(:num)', 'Carrito::update');
+    $routes->get('carrito/delete/(:num)', 'Carrito::delete');
+
+
+
     $routes->get('roles', 'Roles::index');
     $routes->post('roles/create', 'Roles::create');
     $routes->get('roles/edit/(:num)', 'Roles::edit/$1');
@@ -54,13 +60,7 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
     $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
     $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
 
-    //Rutas para el controlador de adornos
-    $routes->get('adornos', 'Adornos::index');
-    $routes->post('adornos/create', 'Adornos::create');
-    $routes->get('adornos/edit/(:num)', 'Adornos::edit/$1');
-    $routes->put('adornos/update/(:num)', 'Adornos::update/$1');
-    $routes->delete('adornos/delete/(:num)', 'Adornos::delete/$1');
-    
+
     //Rutas para el controlador de pasteles
     $routes->get('pasteles', 'Pastel::index');
     $routes->post('pasteles/create', 'Pastel::create');
@@ -76,14 +76,15 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
     $routes->delete('pedidos/delete/(:num)', 'Pedidos::delete/$1');
     
     //para el controlador de detalle de pedidos
-    $routes->get('detalle_pedidos', 'Detalle_Pedido::index');
-    $routes->post('detalle_pedidos/create', 'Detalle_Pedido::create');
-    $routes->get('detalle_pedidos/edit/(:num)', 'Detalle_Pedido::edit/$1');
-    $routes->put('detalle_pedidos/update/(:num)', 'Detalle_Pedido::update/$1');
-    $routes->delete('detalle_pedidos/delete/(:num)', 'Detalle_Pedido::delete/$1');
-    
-    $routes->get('pedidos/usuario/(:num)', 'Pedidos::getPedidosbyUsuarios/$1');
+   
+   
 
+   
+});
+
+$routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter'],function($routes){
+    //Rutas para el controlador de roles
+  
 });
 
 

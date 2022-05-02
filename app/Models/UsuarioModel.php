@@ -7,13 +7,10 @@ class UsuarioModel extends Model{
     protected $table         = 'usuario';
     protected $primaryKey    = 'id_usuario';
 
- 
-   
-
     protected $autoIncrement = true;
     
     protected $returnType    = 'array';
-    protected $allowedFields = ['nombre', 'apellidoP', 'apellidoM', 'telefono', 'correo','password','direccion'];
+    protected $allowedFields = ['nombre', 'apellidoP', 'apellidoM', 'telefono', 'correo','password','direccion','id_rol'];
 
     protected $useTimestamps  = false;
 
@@ -26,7 +23,8 @@ class UsuarioModel extends Model{
         'correo'      =>  'required|valid_email|min_length[5]|max_length[100] |is_unique[usuario.correo]',
         'password'    =>  'required|min_length[6]|max_length[64]',
         'direccion'   =>  'required|alpha_numeric_space|min_length[5]|max_length[100]',
-        'id_rol'      =>  'required|integer|is_valid_rol'
+        'id_rol'      =>  'required|numeric|min_length[1]|max_length[1]'
+       
     ];
 
     protected $validationMessages = [

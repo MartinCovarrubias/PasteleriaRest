@@ -19,26 +19,22 @@ class Usuarios extends ResourceController
 
   public function create()
   {
-      try{
-          $usuario = $this->request->getJSON();
-    //hash  sha256 
-    $usuario->password = password_hash($usuario->password, PASSWORD_BCRYPT);
-     //agrear el id_rol con valor 2 al json
-    
-      
-        
-          if($this->model->insert($usuario)):
-            
-          $usuario = $this->model->insert($usuario);
-            $usuario->id = $this->model->insertID();
-            return $this->respondCreated($usuario);
-          else:
-             return $this->failValidationErrors($this->model->validation->listErrors());
-          endif;
+    try{
+      $usuario = $this->request->getJSON();
 
-      }catch(\Exception $e){
-          return $this->failServerError($e,'Error al crear el usuario');
-      }
+      $usuario->password = password_hash($usuario->password, PASSWORD_BCRYPT);
+      $usuario->id_rol = 2;
+      
+      if($this->model->insert($usuario)):
+        $usuario->id = $this->model->insertID();
+        return $this->respondCreated($usuario);
+      else:
+         return $this->failValidationErrors($this->model->validation->listErrors());
+      endif;
+
+  }catch(\Exception $e){
+      return $this->failServerError($e,'Error al crear el usuario');
+  }
   }
 
   public function edit($id = null)
