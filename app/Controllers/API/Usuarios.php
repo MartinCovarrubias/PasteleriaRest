@@ -23,9 +23,13 @@ class Usuarios extends ResourceController
           $usuario = $this->request->getJSON();
     //hash  sha256 
     $usuario->password = password_hash($usuario->password, PASSWORD_BCRYPT);
-
+     //agrear el id_rol con valor 2 al json
+    
+      
         
           if($this->model->insert($usuario)):
+            
+          $usuario = $this->model->insert($usuario);
             $usuario->id = $this->model->insertID();
             return $this->respondCreated($usuario);
           else:

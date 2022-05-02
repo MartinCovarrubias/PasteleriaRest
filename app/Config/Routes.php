@@ -33,6 +33,11 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->post('/auth/login', 'Auth::login');
+$routes->post('/usuarios/create', 'Usuarios::create');
+
+$routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
+    $routes->post('usuarios/create', 'Usuarios::create');
+});
 
 $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter'],function($routes){
     //Rutas para el controlador de roles
@@ -44,7 +49,7 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
 
     //Rutas para el controlador de usuarios
     $routes->get('usuarios', 'Usuarios::index');
-    $routes->post('usuarios/create', 'Usuarios::create');
+  
     $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
     $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
     $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');

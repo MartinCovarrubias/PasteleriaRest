@@ -1,0 +1,72 @@
+ERROR - 2022-05-01 20:37:12 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2022-05-01 20:37:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('lgl@gmail.com', 'correo', Array, NULL)
+#4 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('correo', 'correo', 'lgl@gmail.com', Array, Array)
+#5 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#6 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#7 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(29): CodeIgniter\Model->insert(Object(stdClass))
+#9 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#10 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#11 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#14 {main}
+ERROR - 2022-05-01 20:41:31 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2022-05-01 20:41:31 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('lgl@gmail.com', 'correo', Array, NULL)
+#4 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('correo', 'correo', 'lgl@gmail.com', Array, Array)
+#5 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#6 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#7 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(28): CodeIgniter\Model->insert(Object(stdClass))
+#9 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#10 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#11 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#14 {main}
+ERROR - 2022-05-01 20:44:26 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2022-05-01 20:44:27 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('lgl@gmail.com', 'correo', Array, NULL)
+#4 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('correo', 'correo', 'lgl@gmail.com', Array, Array)
+#5 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#6 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#7 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(32): CodeIgniter\Model->insert(Object(stdClass))
+#9 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#10 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#11 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#14 {main}
+ERROR - 2022-05-01 20:45:07 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2022-05-01 20:45:07 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('lgl@gmail.com', 'correo', Array, NULL)
+#4 C:\proyectos\Backend\PaseleriaRest\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('correo', 'correo', 'lgl@gmail.com', Array, Array)
+#5 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#6 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#7 C:\proyectos\Backend\PaseleriaRest\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Usuarios.php(32): CodeIgniter\Model->insert(Object(stdClass))
+#9 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Usuarios->create()
+#10 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Usuarios))
+#11 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#14 {main}

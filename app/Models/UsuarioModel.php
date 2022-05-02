@@ -6,10 +6,14 @@ class UsuarioModel extends Model{
 
     protected $table         = 'usuario';
     protected $primaryKey    = 'id_usuario';
-    protected $autoIncrement = true;
 
+ 
+   
+
+    protected $autoIncrement = true;
+    
     protected $returnType    = 'array';
-    protected $allowedFields = ['nombre', 'apellidoP', 'apellidoM', 'telefono', 'correo','password','direccion','id_rol'];
+    protected $allowedFields = ['nombre', 'apellidoP', 'apellidoM', 'telefono', 'correo','password','direccion'];
 
     protected $useTimestamps  = false;
 
