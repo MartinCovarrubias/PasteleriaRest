@@ -1,0 +1,45 @@
+ERROR - 2022-05-02 15:54:08 --> Unknown column 'pastel.imagen' in 'field list'
+CRITICAL - 2022-05-02 15:54:08 --> Call to a member function getResult() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Carrito.php(106): App\Models\CarritoModel->ver_carrito('1')
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Carrito->datosPedidos('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Carrito))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+ERROR - 2022-05-02 16:15:42 --> Unknown column 'carrito_pastel.subtotal' in 'field list'
+CRITICAL - 2022-05-02 16:15:42 --> Call to a member function getRow() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Carrito.php(124): App\Models\CarritoModel->calcular_totalPedido('1')
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Carrito->totalPedido('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Carrito))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+ERROR - 2022-05-02 16:17:35 --> Unknown column 'subtotal' in 'field list'
+CRITICAL - 2022-05-02 16:17:36 --> Call to a member function getRow() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Carrito.php(124): App\Models\CarritoModel->calcular_totalPedido('1')
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Carrito->totalPedido('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Carrito))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+CRITICAL - 2022-05-02 16:59:25 --> Undefined property: stdClass::$id
+#0 C:\proyectos\Backend\PaseleriaRest\app\Helpers\getUser_helper.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\proyectos\\Ba...', 17)
+#1 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Carrito.php(100): get_usuario('Bearer eyJ0eXAi...')
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Carrito->datosPedidos('1')
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Carrito))
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}
+ERROR - 2022-05-02 17:19:20 --> Unknown column 'usuario.apellido' in 'field list'
+CRITICAL - 2022-05-02 17:19:21 --> Call to a member function getResult() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\API\Carrito.php(113): App\Models\CarritoModel->ver_pedidoUser('1', '1')
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\API\Carrito->datosPedidos('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Carrito))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}

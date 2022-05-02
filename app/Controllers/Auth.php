@@ -60,7 +60,9 @@ class Auth extends BaseController
             'data'=>[
             'nombre'=> $usuario ['nombre'],
             'correo'=> $usuario ['correo'],
-            'rol'=> $usuario ['id_rol']
+            'rol'=> $usuario ['id_rol'],
+            'id'=> $usuario ['id_usuario']
+            
             ]
         ];
 

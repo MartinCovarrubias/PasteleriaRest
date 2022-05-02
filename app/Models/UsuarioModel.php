@@ -82,5 +82,14 @@ class UsuarioModel extends Model{
         ];
 
     protected $skipValidation = false;
+      
+    public function usuario_consulta($id_usuario){
+        return $this->db->table('usuario')
+                        ->where('id_usuario', $id_usuario)
+                        ->get()
+                        ->getRow();
+    }
+
+
 
 }

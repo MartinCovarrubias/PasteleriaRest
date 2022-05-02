@@ -33,57 +33,57 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->post('/auth/login', 'Auth::login');
-$routes->post('/usuarios/create', 'Usuarios::create');
+
 
 $routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
     $routes->post('usuarios/create', 'Usuarios::create');
 
-    //rutas para el carrito
-    $routes->get('carrito', 'Carrito::index');
-    $routes->post('carrito/create', 'Carrito::create');
-    $routes->get('carrito/edit/(:num)', 'Carrito::edit');
-    $routes->post('carrito/update/(:num)', 'Carrito::update');
-    $routes->get('carrito/delete/(:num)', 'Carrito::delete');
-
-
-
-    $routes->get('roles', 'Roles::index');
-    $routes->post('roles/create', 'Roles::create');
-    $routes->get('roles/edit/(:num)', 'Roles::edit/$1');
-    $routes->put('roles/update/(:num)', 'Roles::update/$1');
-    $routes->delete('roles/delete/(:num)', 'Roles::delete/$1');
-
-    //Rutas para el controlador de usuarios
-    $routes->get('usuarios', 'Usuarios::index');
-  
-    $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
-    $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
-    $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
-
-
-    //Rutas para el controlador de pasteles
-    $routes->get('pasteles', 'Pastel::index');
-    $routes->post('pasteles/create', 'Pastel::create');
-    $routes->get('pasteles/edit/(:num)', 'Pastel::edit/$1');
-    $routes->put('pasteles/update/(:num)', 'Pastel::update/$1');
-    $routes->delete('pasteles/delete/(:num)', 'Pastel::delete/$1');
-
-    //Rutas para el controlador de pedidos
-    $routes->get('pedidos', 'Pedidos::index');
-    $routes->post('pedidos/create', 'Pedidos::create');
-    $routes->get('pedidos/edit/(:num)', 'Pedidos::edit/$1');
-    $routes->put('pedidos/update/(:num)', 'Pedidos::update/$1');
-    $routes->delete('pedidos/delete/(:num)', 'Pedidos::delete/$1');
     
-    //para el controlador de detalle de pedidos
-   
-   
-
    
 });
 
 $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter'],function($routes){
-    //Rutas para el controlador de roles
+   //rutas para el carrito
+   $routes->get('carrito', 'Carrito::index');
+   $routes->post('carrito/create', 'Carrito::create');
+   $routes->get('carrito/edit/(:num)', 'Carrito::edit');
+   $routes->post('carrito/update/(:num)', 'Carrito::update');
+   $routes->get('carrito/delete/(:num)', 'Carrito::delete');
+
+
+
+   $routes->get('roles', 'Roles::index');
+   $routes->post('roles/create', 'Roles::create');
+   $routes->get('roles/edit/(:num)', 'Roles::edit/$1');
+   $routes->put('roles/update/(:num)', 'Roles::update/$1');
+   $routes->delete('roles/delete/(:num)', 'Roles::delete/$1');
+
+   //Rutas para el controlador de usuarios
+   $routes->get('usuarios', 'Usuarios::index');
+ 
+   $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
+   $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
+   $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
+
+
+   //Rutas para el controlador de pasteles
+   $routes->get('pasteles', 'Pastel::index');
+   $routes->post('pasteles/create', 'Pastel::create');
+   $routes->get('pasteles/edit/(:num)', 'Pastel::edit/$1');
+   $routes->put('pasteles/update/(:num)', 'Pastel::update/$1');
+   $routes->delete('pasteles/delete/(:num)', 'Pastel::delete/$1');
+
+   //Rutas para el controlador de pedidos
+   $routes->get('pedidos', 'Pedidos::index');
+   $routes->post('pedidos/create', 'Pedidos::create');
+   $routes->get('pedidos/edit/(:num)', 'Pedidos::edit/$1');
+   $routes->put('pedidos/update/(:num)', 'Pedidos::update/$1');
+   $routes->delete('pedidos/delete/(:num)', 'Pedidos::delete/$1');
+   
+   //para el controlador de detalle de pedidos
+   $routes->get('carrito/datosPedidos/(:num)', 'Carrito::datosPedidos/$1');
+   $routes->get('carrito/totalPedido/(:num)', 'Carrito::totalPedido/$1');
+
   
 });
 
