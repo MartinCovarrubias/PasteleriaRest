@@ -17,8 +17,9 @@ class Auth extends BaseController
     public function login()
     {
         Try{
-           $correo = $this->request->getPost('correo');
-           $password = $this->request->getPost('password');
+            $login = $this->request->getJSON();
+           $correo = $this->request->getVar('correo');
+           $password = $this->request->getVar('password');
 
            $usuarioModel = new UsuarioModel();
           $validateUsuario = $usuarioModel->where('correo',$correo)->first();

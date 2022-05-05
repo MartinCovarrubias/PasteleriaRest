@@ -10,7 +10,7 @@ class UsuarioModel extends Model{
     protected $autoIncrement = true;
     
     protected $returnType    = 'array';
-    protected $allowedFields = ['nombre', 'apellidoP', 'apellidoM', 'telefono', 'correo','password','direccion','id_rol'];
+    protected $allowedFields = ['nombre', 'apellidoP', 'telefono', 'correo','password','direccion','id_rol'];
 
     protected $useTimestamps  = false;
 
@@ -18,7 +18,6 @@ class UsuarioModel extends Model{
     protected $validationRules    = [
         'nombre'      => 'required|alpha_space|min_length[3]|max_length[100]',
         'apellidoP'   =>  'required|alpha_space|min_length[3]|max_length[100]',
-        'apellidoM'   =>  'required|alpha_space|min_length[3]|max_length[100]',
         'telefono'    =>  'required|numeric|min_length[10]|max_length[10]',
         'correo'      =>  'required|valid_email|min_length[5]|max_length[100] |is_unique[usuario.correo]',
         'password'    =>  'required|min_length[6]|max_length[64]',
@@ -39,12 +38,6 @@ class UsuarioModel extends Model{
             'alpha_space' => 'El apellido paterno debe contener solo letras y espacios',
             'min_length'  => 'El apellido paterno debe tener al menos 3 caracteres',
             'max_length'  => 'El apellido paterno debe tener como maximo 100 caracteres'
-        ],
-        'apellidoM'   => [
-            'required'    => 'El apellido materno es requerido',
-            'alpha_space' => 'El apellido materno debe contener solo letras y espacios',
-            'min_length'  => 'El apellido materno debe tener al menos 3 caracteres',
-            'max_length'  => 'El apellido materno debe tener como maximo 100 caracteres'
         ],
         'telefono'    => [
             'required'    => 'El telefono es requerido',
