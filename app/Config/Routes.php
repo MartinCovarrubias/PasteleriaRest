@@ -39,7 +39,12 @@ $routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
     $routes->post('usuarios/create', 'Usuarios::create');
     $routes->get('clientes', 'Usuarios::Clientes');
     $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
+    $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
+    $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
+ 
     
+
+    $routes->get('roles', 'Roles::index');
    
 });
 
@@ -62,8 +67,6 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
    //Rutas para el controlador de usuarios
    $routes->get('usuarios', 'Usuarios::index');
  
-   $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
-   $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
  
 
 
