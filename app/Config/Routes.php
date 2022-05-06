@@ -37,7 +37,8 @@ $routes->post('/auth/login', 'Auth::login');
 
 $routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
     $routes->post('usuarios/create', 'Usuarios::create');
-
+    $routes->get('clientes', 'Usuarios::Clientes');
+    $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
     
    
 });
@@ -63,7 +64,7 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
  
    $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
    $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
-   $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
+ 
 
 
    //Rutas para el controlador de pasteles
@@ -83,6 +84,11 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
    //para el controlador de detalle de pedidos
    $routes->get('carrito/datosPedidos/(:num)', 'Carrito::datosPedidos/$1');
    $routes->get('carrito/totalPedido/(:num)', 'Carrito::totalPedido/$1');
+
+   //para ver los administradores
+    $routes->get('administradores', 'Usuarios::Administradores');
+
+    //para ver los clientes
 
   
 });

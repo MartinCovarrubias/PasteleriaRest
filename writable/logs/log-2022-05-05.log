@@ -1,0 +1,298 @@
+ERROR - 2022-05-05 08:54:40 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 08:54:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 08:55:22 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 08:55:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:03:27 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:03:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:03:29 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:03:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:03:31 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:03:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:03:33 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:03:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:03:35 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:03:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:04:31 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:04:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:05:23 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:05:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:05:51 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:05:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:06:06 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:06:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:06:14 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:06:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+ERROR - 2022-05-05 10:07:04 --> Error connecting to the database: Unknown database 'pasteleria'
+CRITICAL - 2022-05-05 10:07:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pasteleria'
+#0 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\proyectos\Backend\PaseleriaRest\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\proyectos\Backend\PaseleriaRest\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#5 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->login()
+#6 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#10 {main}
+CRITICAL - 2022-05-05 14:12:23 --> Call to undefined method App\Models\UsuarioModel::deleteToken
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(77): CodeIgniter\Model->__call('deleteToken', Array)
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+CRITICAL - 2022-05-05 14:12:57 --> Call to undefined method App\Models\UsuarioModel::deleteToken
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(77): CodeIgniter\Model->__call('deleteToken', Array)
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+CRITICAL - 2022-05-05 14:42:10 --> Undefined property: App\Controllers\Auth::$session
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\proyectos\\Ba...', 77)
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+CRITICAL - 2022-05-05 14:49:11 --> Wrong number of segments
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(81): Firebase\JWT\JWT::decode('', 'key_secret', Array)
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+CRITICAL - 2022-05-05 14:57:01 --> Too few arguments to function App\Controllers\Auth::logout(), 0 passed in C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#5 {main}
+CRITICAL - 2022-05-05 15:02:04 --> Too few arguments to function App\Controllers\Auth::logout(), 0 passed in C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#5 {main}
+CRITICAL - 2022-05-05 15:19:02 --> Wrong number of segments
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(80): Firebase\JWT\JWT::decode('', 'key_secret', Array)
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+CRITICAL - 2022-05-05 15:30:48 --> Wrong number of segments
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(80): Firebase\JWT\JWT::decode('', 'key_secret', Array)
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+CRITICAL - 2022-05-05 15:54:56 --> Too few arguments to function App\Controllers\Auth::logout(), 0 passed in C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#5 {main}
+CRITICAL - 2022-05-05 15:59:29 --> Call to a member function getUser() on null
+#0 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#5 {main}
+CRITICAL - 2022-05-05 16:04:01 --> Call to a member function getToken() on null
+#0 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#5 {main}
+CRITICAL - 2022-05-05 16:17:29 --> Undefined property: App\Controllers\Auth::$session
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\proyectos\\Ba...', 80)
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#6 {main}
+CRITICAL - 2022-05-05 16:19:02 --> Call to a member function getUser() on null
+#0 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#1 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#5 {main}
+CRITICAL - 2022-05-05 16:28:10 --> Wrong number of segments
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(89): Firebase\JWT\JWT::decode('', 'key_secret', Array)
+#1 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(81): App\Controllers\Auth->getToken()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}
+CRITICAL - 2022-05-05 16:31:36 --> Undefined array key 1
+#0 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\proyectos\\Ba...', 89)
+#1 C:\proyectos\Backend\PaseleriaRest\app\Controllers\Auth.php(80): App\Controllers\Auth->getToken()
+#2 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(832): App\Controllers\Auth->logout()
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}

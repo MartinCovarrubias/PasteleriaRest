@@ -4,6 +4,7 @@ use App\Models\UsuarioModel;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\Config\Services;
 use Firebase\JWT\JWT;
+//use Firebase\JWT\Key;
 
 class Auth extends BaseController
 {
@@ -12,6 +13,8 @@ class Auth extends BaseController
     public function __construct()
     {
         helper('secure_password');
+     
+       
     }
 
     public function login()
@@ -56,8 +59,8 @@ class Auth extends BaseController
         $payload = [
             'aud' => base_url(),
             'iat' =>  $time, //tiempo en que se genero el token
-           //tiempo de expiracion del token dato entero 24hrs
-            'exp' => $time + (60*60*24),
+           //tiempo de expiracion del token una hora despues del tiempo de generacion
+            'exp' => $time + (60 * 60),
             'data'=>[
             'nombre'=> $usuario ['nombre'],
             'correo'=> $usuario ['correo'],
@@ -70,4 +73,7 @@ class Auth extends BaseController
         $jwt = JWT::encode($payload, $key, 'HS256');
         return $jwt;
     }
+
+  
+
 }

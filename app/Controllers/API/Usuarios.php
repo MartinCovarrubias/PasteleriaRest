@@ -97,4 +97,28 @@ class Usuarios extends ResourceController
       
   }
 
+
+  
+  public function Administradores()
+  {
+    try{
+      $usuario = $this->model->findAll();
+      $usuario = $this->model->where('id_rol', 1)->findAll();
+      return $this->respond($usuario);
+    }catch(\Exception $e){
+        return $this->failServerError($e,'Error en el servidor');
+    }
+  }
+
+  public function Clientes()
+  {
+    try{
+      $usuario = $this->model->findAll();
+      $usuario = $this->model->where('id_rol', 2)->findAll();
+      return $this->respond($usuario);
+    }catch(\Exception $e){
+        return $this->failServerError($e,'Error en el servidor');
+    }
+  }
+
 }
