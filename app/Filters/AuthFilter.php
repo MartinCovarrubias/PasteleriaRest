@@ -1,6 +1,5 @@
 <?php 
 namespace App\Filters;
-
 use App\Models\RolModel;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\Filters\FilterInterface;
@@ -11,11 +10,12 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use Firebase\JWT\ExpiredException;
 
+
 class AuthFilter implements FilterInterface{
-    
   use ResponseTrait;
 
-    public function before(RequestInterface $request, $arguments = null){ //se ejecuta antes del controlador
+
+    public function before(RequestInterface $request, $arguments = null){ 
        
         try {
             $key = Services::getSecretKey();
@@ -46,8 +46,8 @@ class AuthFilter implements FilterInterface{
 
     }
 
-    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null){ // se ejecuta despues del controlador
-
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null){ 
     }
-
 }
+
+

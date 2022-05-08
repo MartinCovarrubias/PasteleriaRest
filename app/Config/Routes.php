@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use DeepCopy\Filter\Filter;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -35,20 +37,14 @@ $routes->get('/', 'Home::index');
 $routes->post('/auth/login', 'Auth::login');
 
 
-$routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
-    $routes->post('usuarios/create', 'Usuarios::create');
-    $routes->get('clientes', 'Usuarios::Clientes');
-    $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
-    $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
-    $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
- 
-    
 
-    $routes->get('roles', 'Roles::index');
+$routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
+   
+    $routes->post('usuarios/create', 'Usuarios::create');
    
 });
 
-$routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter'],function($routes){
+$routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter', 'filter' => 'cors' ],function($routes){
    //rutas para el carrito
    $routes->get('carrito', 'Carrito::index');
    $routes->post('carrito/create', 'Carrito::create');
@@ -66,7 +62,13 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
 
    //Rutas para el controlador de usuarios
    $routes->get('usuarios', 'Usuarios::index');
- 
+  
+   $routes->delete('usuarios/delete/(:num)', 'Usuarios::delete/$1');
+   $routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
+   $routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
+   $routes->get('roles', 'Roles::index');
+  
+   $routes->get('clientes', 'Usuarios::Clientes');
  
 
 

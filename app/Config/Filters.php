@@ -10,6 +10,7 @@ use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
 use App\Filters\Cors;
 
+
 class Filters extends BaseConfig
 {
     /**
@@ -25,7 +26,8 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'authFilter'   => \App\Filters\AuthFilter::class,
-        'cors'     => Cors::class,   
+       'cors'     => Cors::class,   
+        
     ];
 
     /**
@@ -69,6 +71,7 @@ class Filters extends BaseConfig
      * @var array
      */
     public $filters = [
+       'cors' => ['before' => ['api/*']],
         'authFilter'=>[
             'before'=>[
                 'api/*'

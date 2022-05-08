@@ -7,20 +7,20 @@ namespace Composer\Autoload;
 class ComposerStaticInita9a93baf48441c79c410ceeec5d9543b
 {
     public static $files = array (
+        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
-        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
-        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '38143a9afc50997d55e4815db8489d1c' => __DIR__ . '/..' . '/rector/rector/bootstrap.php',
     );
 
@@ -84,6 +84,7 @@ class ComposerStaticInita9a93baf48441c79c410ceeec5d9543b
         ),
         'F' => 
         array (
+            'Fluent\\Cors\\' => 12,
             'Firebase\\JWT\\' => 13,
             'Faker\\' => 6,
         ),
@@ -108,8 +109,8 @@ class ComposerStaticInita9a93baf48441c79c410ceeec5d9543b
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -239,6 +240,10 @@ class ComposerStaticInita9a93baf48441c79c410ceeec5d9543b
         array (
             0 => __DIR__ . '/..' . '/kint-php/kint/src',
         ),
+        'Fluent\\Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/agungsugiarto/codeigniter4-cors/src',
+        ),
         'Firebase\\JWT\\' => 
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
@@ -283,6 +288,7 @@ class ComposerStaticInita9a93baf48441c79c410ceeec5d9543b
         array (
             0 => __DIR__ . '/../..' . '/system',
             1 => __DIR__ . '/../..' . '/tests/system',
+            2 => __DIR__ . '/..' . '/codeigniter4/framework/system',
         ),
     );
 
@@ -1196,6 +1202,10 @@ class ComposerStaticInita9a93baf48441c79c410ceeec5d9543b
         'Firebase\\JWT\\JWT' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWT.php',
         'Firebase\\JWT\\Key' => __DIR__ . '/..' . '/firebase/php-jwt/src/Key.php',
         'Firebase\\JWT\\SignatureInvalidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/SignatureInvalidException.php',
+        'Fluent\\Cors\\Commands\\CorsCommand' => __DIR__ . '/..' . '/agungsugiarto/codeigniter4-cors/src/Commands/CorsCommand.php',
+        'Fluent\\Cors\\Config\\Cors' => __DIR__ . '/..' . '/agungsugiarto/codeigniter4-cors/src/Config/Cors.php',
+        'Fluent\\Cors\\Filters\\CorsFilter' => __DIR__ . '/..' . '/agungsugiarto/codeigniter4-cors/src/Filters/CorsFilter.php',
+        'Fluent\\Cors\\ServiceCors' => __DIR__ . '/..' . '/agungsugiarto/codeigniter4-cors/src/ServiceCors.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Kint\\CallFinder' => __DIR__ . '/..' . '/kint-php/kint/src/CallFinder.php',
         'Kint\\Kint' => __DIR__ . '/..' . '/kint-php/kint/src/Kint.php',

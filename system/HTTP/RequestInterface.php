@@ -58,4 +58,8 @@ interface RequestInterface
      * @return mixed
      */
     public function getServer($index = null, $filter = null);
+
+  
+    
+
 }
