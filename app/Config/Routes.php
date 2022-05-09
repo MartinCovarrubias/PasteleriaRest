@@ -95,6 +95,9 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
 
     //para ver los clientes
 
+    //para ver la imagen de los pasteles
+    $routes->get('getImage/(:num)', 'Pastel::GetImage/$1');
+
   
 });
 

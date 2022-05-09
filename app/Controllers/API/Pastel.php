@@ -4,6 +4,7 @@ namespace App\Controllers\API;
 
 use App\Models\PastelModel;
 use CodeIgniter\RESTful\ResourceController;
+use Config\App;
 
 class Pastel extends ResourceController
 {
@@ -14,8 +15,33 @@ class Pastel extends ResourceController
   public function index()
 {
     $pasteles = $this->model->findAll();
-    return $this->respond($pasteles);
+   foreach ($pasteles as  &$pastel ) {
+    $pastel['imagen_pastel'] = base64_encode(file_get_contents(APPPATH . '../public/images/pasteles/' . $pastel['imagen_pastel']));
+  }
+
+   return $this->respond($pasteles);
 }
+
+//codificar imagen_pastel a base64
+public function getImage($id = null) {
+  try{
+    if($id == null)
+      return $this->failValidationErrors('No se ha especificado el id del pastel');
+    $pastelVerificado = $this->model->find($id);
+    if( $pastelVerificado == null)
+      return $this->failNotFound('No se encontro el pastel con el id: '.$id);
+    $nombreImagen = $pastelVerificado['imagen_pastel'];
+    $file = APPPATH.'../public/images/pasteles/'.$nombreImagen;
+    $file = file_get_contents($file);
+    $file = base64_encode($file);
+   //reorna el json con la imagen codificada
+    return $this->respond($file);
+  }catch(\Exception $e){
+    return $this->failServerError($e,'Error en el servidor');
+  }
+
+}
+
 
   
 
@@ -131,5 +157,11 @@ public function create() {
  
 
   }
+
+
+
+
+
+
 }
   
