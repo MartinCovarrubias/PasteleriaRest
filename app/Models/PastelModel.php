@@ -16,7 +16,7 @@ use CodeIgniter\Model;
             'nombre'          =>  'required|alpha_space|min_length[3]|max_length[100]',
             'imagen_pastel'   =>  'required|alpha_numeric_punct|min_length[3]|max_length[255]',
             'precio'          =>  'required|decimal|min_length[1]|max_length[100]',
-            'descripcion'     =>  'required|alpha_space|min_length[3]|max_length[100]',
+            'descripcion'     =>  'required|alpha_numeric_space|min_length[3]|max_length[100]',
             'estado'          =>  'required|alpha_space|min_length[3]|max_length[100]',
            
         ];
@@ -45,6 +45,7 @@ use CodeIgniter\Model;
                 'alpha_space' => 'La descripcion debe contener solo letras y espacios',
                 'min_length'  => 'La descripcion debe tener al menos 3 caracteres',
                 'max_length'  => 'La descripcion debe tener como maximo 100 caracteres'
+                
             ],
             'estado'       => [
                 'required'    => 'El estado es requerido',

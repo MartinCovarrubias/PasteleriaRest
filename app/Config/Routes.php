@@ -41,6 +41,7 @@ $routes->post('/auth/login', 'Auth::login');
 $routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
    
     $routes->post('usuarios/create', 'Usuarios::create');
+    $routes->get('pasteles', 'Pastel::index');
    
 });
 
