@@ -5,6 +5,7 @@ namespace App\Controllers\API;
 use App\Models\CarritoModel;
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\PedidoModel;
+use App\Models\PastelModel;
 
 class Carrito extends ResourceController
 {
@@ -116,9 +117,9 @@ class Carrito extends ResourceController
     }catch(\Exception $e){
       return $this->failServerError($e,'Error en el servidor');
     }
-
   }
 
+/*
   public function totalPedido($id = null){
     try {
       $modelPedido = new PedidoModel();
@@ -136,5 +137,55 @@ class Carrito extends ResourceController
     }
 
   }
+*/
+
+  //metodo para agregar un pastel a un carrito
+  public function agregarc($id = null){
+    try {
+      $modelPedido = new PedidoModel();
+        if($id == null)
+        return $this->failValidationErrors('No se ha pasado un numero de pedido valido');
+
+        $pedido = $modelPedido->find($id);
+        if($pedido == null)
+        return $this->failNotFound('No se encontro el pedido con el id: '.$id);
+        $pastel = new PastelModel();
+        $pastel = $this->request->getJSON();
+        $pedidos = $this->model->agregar_pastel($pastel->id_pastel,1,$id,);
+        return $this->respond($pedidos);
+
+    }catch(\Exception $e){
+      return $this->failServerError($e,'Error en el servidor');
+    }
+
+  }
+
+  //metodo para ver el carrito de un usuario
+  public function vercarrito($id = null){
+    $authHeader = $this->request->getServer('HTTP_AUTHORIZATION');
+    $get_usuario = get_usuario($authHeader);
+    if ($get_usuario['Usuario'] == null){
+        return $this->failNotFound($get_usuario['error']);
+    }
+    try {
+      $modelPedido = new PedidoModel();
+        if($id == null)
+        return $this->failValidationErrors('No se ha pasado un numero de pedido valido');
+
+        $pedido = $modelPedido->find($id);
+        if($pedido == null)
+        return $this->failNotFound('No se encontro el pedido con el id: '.$id);
+        $usuario = $get_usuario['Usuario'];
+        $pedidos = $this->model->ver_carritoUser($id,$usuario->id_usuario);
+        return $this->respond($pedidos);
+
+    }catch(\Exception $e){
+      return $this->failServerError($e,'Error en el servidor');
+    }
+
+  }
+
+  
 
 }
+

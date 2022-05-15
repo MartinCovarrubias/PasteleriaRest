@@ -42,6 +42,9 @@ $routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
    
     $routes->post('usuarios/create', 'Usuarios::create');
     $routes->get('pasteles', 'Pastel::index');
+
+    //creame la ruta para crearCarrito pasa el id del pedido
+ //   $routes->post('carrito/crear_carrito/(:num)', 'Carrito::crear_carrito');
    
 });
 
@@ -53,7 +56,7 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
    $routes->post('carrito/update/(:num)', 'Carrito::update');
    $routes->get('carrito/delete/(:num)', 'Carrito::delete');
 
-
+   
 
    $routes->get('roles', 'Roles::index');
    $routes->post('roles/create', 'Roles::create');
@@ -90,14 +93,17 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
    //para el controlador de detalle de pedidos
    $routes->get('carrito/datosPedidos/(:num)', 'Carrito::datosPedidos/$1');
    $routes->get('carrito/totalPedido/(:num)', 'Carrito::totalPedido/$1');
-
+   
+   $routes->post('carrito/agregarc/(:num)', 'Carrito::agregarc/$1');
+   $routes->get('carrito/vercarrito/(:num)', 'Carrito::vercarrito/$1');
+  
+  
+  
    //para ver los administradores
     $routes->get('administradores', 'Usuarios::Administradores');
 
     //para ver los clientes
 
-    //para ver la imagen de los pasteles
-    $routes->get('getImage/(:num)', 'Pastel::GetImage/$1');
 
   
 });

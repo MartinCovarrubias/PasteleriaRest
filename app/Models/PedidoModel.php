@@ -9,13 +9,14 @@ class PedidoModel extends Model
     protected $autoIncrement = true;
 
     protected $returnType    = 'array';
-    protected $allowedFields = [ 'fecha_pedido', 'estado', 'id_usuario'];
+    protected $allowedFields = [ 'fecha_pedido','cantidad','estado', 'id_usuario'];
 
     protected $useTimestamps  = false;
   
 
     protected $validationRules    = [
         'fecha_pedido'   =>  'required|valid_date[Y-m-d]',
+        'cantidad'          =>  'required|integer|min_length[1]|max_length[100]',
         'estado'         =>  'required|alpha_space|min_length[3]|max_length[100]',
         'id_usuario'     =>  'required|integer|is_valid_usuario'
     ];
@@ -40,6 +41,10 @@ class PedidoModel extends Model
     ];
       
     protected $skipValidation = false;
+
+   //metodo agregar pasteles al carrito 
+   
+
 
 
 }

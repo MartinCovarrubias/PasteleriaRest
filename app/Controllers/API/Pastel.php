@@ -22,28 +22,6 @@ class Pastel extends ResourceController
    return $this->respond($pasteles);
 }
 
-//codificar imagen_pastel a base64
-public function getImage($id = null) {
-  try{
-    if($id == null)
-      return $this->failValidationErrors('No se ha especificado el id del pastel');
-    $pastelVerificado = $this->model->find($id);
-    if( $pastelVerificado == null)
-      return $this->failNotFound('No se encontro el pastel con el id: '.$id);
-    $nombreImagen = $pastelVerificado['imagen_pastel'];
-    $file = APPPATH.'../public/images/pasteles/'.$nombreImagen;
-    $file = file_get_contents($file);
-    $file = base64_encode($file);
-   //reorna el json con la imagen codificada
-    return $this->respond($file);
-  }catch(\Exception $e){
-    return $this->failServerError($e,'Error en el servidor');
-  }
-
-}
-
-
-  
 
   public function edit($id = null)
   {
@@ -53,6 +31,7 @@ public function getImage($id = null) {
             $pastel = $this->model->find($id);
             if($pastel == null)
             return $this->failNotFound('No se encontro el pastel con el id '.$id);
+            $pastel['imagen_pastel'] = base64_encode(file_get_contents(APPPATH . '../public/images/pasteles/' . $pastel['imagen_pastel']));
             return $this->respond($pastel);
         }catch(\Exception $e){
             return $this->failServerError($e,'Error en el servidor');

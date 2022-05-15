@@ -152,7 +152,6 @@ ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `pasteleria`.`carrito_pastel` (
   `cantidad` INT NOT NULL,
-  `total` DOUBLE NOT NULL,
   `id_pastel` INT NOT NULL,
   `id_pedido` INT NOT NULL,
   `id_carrito` INT NOT NULL AUTO_INCREMENT UNIQUE,
@@ -169,5 +168,4 @@ CREATE TABLE IF NOT EXISTS `pasteleria`.`carrito_pastel` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-
-
+ 
