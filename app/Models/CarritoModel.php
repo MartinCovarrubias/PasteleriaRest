@@ -43,9 +43,9 @@ class CarritoModel extends Model {
 
     public function ver_pedidoUser($id_pedido = null, $id_usuario = null) {
         $builder = $this->db->table($this->table);
-        $builder->select('carrito_pastel.id_carrito, carrito_pastel.cantidad');
+        $builder->select('pedido.id_pedido, carrito_pastel.cantidad');
         $builder->select('pastel.id_pastel, pastel.nombre, pastel.precio, pastel.imagen_pastel');
-        $builder->select('pedido.id_pedido, pedido.fecha_pedido, pedido.estado');
+        $builder->select('pedido.fecha_pedido, pedido.estado');
         $builder->select('usuario.nombre, usuario.apellidoP');
         $builder->select('(carrito_pastel.cantidad * pastel.precio) as total');
         $builder->join('pastel', 'pastel.id_pastel = carrito_pastel.id_pastel');
@@ -90,7 +90,10 @@ class CarritoModel extends Model {
             return $query->getResult();
          }
 
+        //metodo para crear dos registros a la vez de la tabla pedido y carrito_pastel
         
+
+
           
 
     }
