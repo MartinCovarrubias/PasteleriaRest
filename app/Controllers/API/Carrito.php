@@ -160,7 +160,7 @@ class Carrito extends ResourceController
 
   }
 
-  //metodo para ver el carrito de un usuario
+  //metodo para ver los pedidos de un usuario
   public function vercarrito($id = null){
     $authHeader = $this->request->getServer('HTTP_AUTHORIZATION');
     $get_usuario = get_usuario($authHeader);
@@ -176,7 +176,7 @@ class Carrito extends ResourceController
         if($pedido == null)
         return $this->failNotFound('No se encontro el pedido con el id: '.$id);
         $usuario = $get_usuario['Usuario'];
-        $pedidos = $this->model->ver_carritoUser($id,$usuario->id_usuario);
+        $pedidos = $this->model->ver_pedidoUser($id,$usuario->id_usuario);
         return $this->respond($pedidos);
 
     }catch(\Exception $e){
@@ -184,6 +184,9 @@ class Carrito extends ResourceController
     }
 
   }
+  
+
+
 
   
 

@@ -23,7 +23,7 @@ class Pedidos extends ResourceController
           $pedido = $this->request->getJSON();
           if($this->model->insert($pedido)):
             $pedido->id = $this->model->insertID();
-            return $this->respondCreated($pedido);
+            return $this->respond($pedido);
           else:
              return $this->failValidationErrors($this->model->validation->listErrors());
           endif;
@@ -92,6 +92,7 @@ class Pedidos extends ResourceController
       
   }
 
+   
 
  
 
