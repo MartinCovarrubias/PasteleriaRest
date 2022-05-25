@@ -1,0 +1,30 @@
+ERROR - 2022-05-24 19:48:12 --> Table 'pasteleria.roles' doesn't exist in engine
+CRITICAL - 2022-05-24 19:48:13 --> Call to a member function getFirstRow() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+#1 C:\proyectos\Backend\PaseleriaRest\app\Filters\AuthFilter.php(33): CodeIgniter\BaseModel->find('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('api/administrad...', 'before')
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}
+ERROR - 2022-05-24 21:32:53 --> Table 'pasteleria.roles' doesn't exist in engine
+CRITICAL - 2022-05-24 21:32:54 --> Call to a member function getFirstRow() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+#1 C:\proyectos\Backend\PaseleriaRest\app\Filters\AuthFilter.php(33): CodeIgniter\BaseModel->find('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('api/administrad...', 'before')
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}
+ERROR - 2022-05-24 21:35:14 --> Table 'pasteleria.roles' doesn't exist in engine
+CRITICAL - 2022-05-24 21:35:15 --> Call to a member function getFirstRow() on bool
+#0 C:\proyectos\Backend\PaseleriaRest\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+#1 C:\proyectos\Backend\PaseleriaRest\app\Filters\AuthFilter.php(33): CodeIgniter\BaseModel->find('1')
+#2 C:\proyectos\Backend\PaseleriaRest\system\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('api/clientes', 'before')
+#4 C:\proyectos\Backend\PaseleriaRest\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\proyectos\Backend\PaseleriaRest\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\proyectos\Backend\PaseleriaRest\system\Commands\Server\rewrite.php(43): require_once('C:\\proyectos\\Ba...')
+#7 {main}

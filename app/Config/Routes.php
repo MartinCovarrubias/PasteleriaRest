@@ -95,7 +95,8 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
    $routes->get('carrito/totalPedido/(:num)', 'Carrito::totalPedido/$1');
    
    $routes->post('carrito/agregarc/(:num)', 'Carrito::agregarc/$1');
-   $routes->get('carrito/vercarrito/(:num)', 'Carrito::vercarrito/$1');
+   ////////////////////////////////////////////////////////////////////////////////
+   $routes->get('carrito/ver_pedidos/(:num)', 'Carrito::ver_pedidos/$1');
   
   
   

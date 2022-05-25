@@ -92,7 +92,9 @@ class Pedidos extends ResourceController
       
   }
 
-   
+   //join para ver los pedidos de un usuario
+ 
+
 
  
 

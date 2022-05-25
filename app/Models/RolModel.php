@@ -11,7 +11,7 @@ class RolModel extends Model {
     protected $returnType    = 'array';
     protected $allowedFields = ['nombre_rol'];
 
-    protected $useTimestamps = false; //para usar created_at y updated_at
+    protected $useTimestamps = false; 
    
 
     protected $validationRules    = [

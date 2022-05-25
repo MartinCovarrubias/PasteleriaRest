@@ -74,25 +74,20 @@ class CarritoModel extends Model {
             return $this->db->insertID();
         }
      
-        //metodo para ver el carrito de un usuario
+        
         public function ver_carritoUser($id_usuario = null) {
             $builder = $this->db->table($this->table);
-            $builder->select('carrito_pastel.id_carrito');
-            $builder->select('pastel.id_pastel, pastel.nombre, pastel.precio, pastel.imagen_pastel');
+          //$builder->select('carrito_pastel.id_carrito');
+            $builder->select('pastel.id_pastel, pastel.nombre, pastel.descripcion, pastel.precio, pastel.imagen_pastel');
             $builder->select('pedido.id_pedido, pedido.fecha_pedido, pedido.estado, pedido.cantidad');
-            $builder->select('usuario.nombre, usuario.apellidoP');
+           // $builder->select('usuario.nombre, usuario.apellidoP');
             $builder->select('(pedido.cantidad * pastel.precio) as total');
             $builder->join('pastel', 'pastel.id_pastel = carrito_pastel.id_pastel');
             $builder->join('pedido', 'pedido.id_pedido = carrito_pastel.id_pedido');
-            $builder->join('usuario', 'usuario.id_usuario = pedido.id_usuario');
+          //  $builder->join('usuario', 'usuario.id_usuario = pedido.id_usuario');
             $builder->where('pedido.id_usuario', $id_usuario);
             $query = $builder->get();
             return $query->getResult();
          }
-
-        
-
-
-          
 
     }
