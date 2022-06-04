@@ -89,6 +89,9 @@ $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilt
    $routes->get('pedidos/edit/(:num)', 'Pedidos::edit/$1');
    $routes->put('pedidos/update/(:num)', 'Pedidos::update/$1');
    $routes->delete('pedidos/delete/(:num)', 'Pedidos::delete/$1');
+  
+   $routes->get('pedidos/vista_pedidos', 'Pedidos::vista_pedidos');
+
    
    //para el controlador de detalle de pedidos
    $routes->get('carrito/datosPedidos/(:num)', 'Carrito::datosPedidos/$1');

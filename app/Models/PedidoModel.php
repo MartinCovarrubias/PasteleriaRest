@@ -50,7 +50,10 @@ class PedidoModel extends Model
 
    
    
-
+public function vista_pedidos(){
+    $vista = $this->db->table('vista_pedidos')->get()->getResultArray();
+    return $vista;
+}
 
 
 }

@@ -92,8 +92,13 @@ class Pedidos extends ResourceController
       
   }
 
-   //join para ver los pedidos de un usuario
  
+
+  public function vista_pedidos()
+  {
+    $vista_pedidos = $this->model->vista_pedidos();
+    return $this->respond($vista_pedidos);
+  }
 
 
  

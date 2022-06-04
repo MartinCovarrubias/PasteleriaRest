@@ -73,9 +73,7 @@ ENGINE = InnoDB;
 
 
  
-// join para ver los pedidos de un usuario
-SELECT Pedido.id_pedido, Pedido.fecha_pedido, Pedido.total, Pedido.estado, Pedido.id_usuario, Usuario.nombre, Usuario.apellidoP, Usuario.telefono, Usuario.correo, Usuario.password, Usuario.direccion, Usuario.id_rol, Roles.nombre_rol
-FROM Pedido
-INNER JOIN Usuario ON Pedido.id_usuario = Usuario.id_usuario
-INNER JOIN Roles ON Usuario.id_rol = Roles.id_rol
-WHERE Usuario.id_usuario = 1;
+
+
+
+
