@@ -44,7 +44,7 @@ $routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
     $routes->get('pasteles', 'Pastel::index'); 
 });
 
-$routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter', 'filter' => 'cors' ],function($routes){
+$routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter' ],function($routes){
    //rutas para el carrito
    $routes->get('carrito', 'Carrito::index');
    $routes->post('carrito/create', 'Carrito::create');
