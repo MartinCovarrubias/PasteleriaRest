@@ -41,11 +41,7 @@ $routes->post('/auth/login', 'Auth::login');
 $routes->group('public',['namespace'=>'App\Controllers\API'], function($routes){
    
     $routes->post('usuarios/create', 'Usuarios::create');
-    $routes->get('pasteles', 'Pastel::index');
-
-    //creame la ruta para crearCarrito pasa el id del pedido
- //   $routes->post('carrito/crear_carrito/(:num)', 'Carrito::crear_carrito');
-   
+    $routes->get('pasteles', 'Pastel::index'); 
 });
 
 $routes->group('api',['namespace' => 'App\Controllers\API','filter' => 'authFilter', 'filter' => 'cors' ],function($routes){
